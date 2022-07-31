@@ -1,0 +1,13 @@
+@font-face {
+    font-family: testFont;
+    src: url('../assets/fonts/title.ttf');
+}
+
+/* .img {
+    background: url('../assets/images/test.png');
+} */
+
+.hello {
+    font-family: testFont;
+    color: blue;
+}
