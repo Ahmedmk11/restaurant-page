@@ -51,7 +51,7 @@ export default function menuLoader() {
     p14.textContent = 'w/sauce...................... 2.50';
     p14.classList.add('right');
     p15.textContent = 'CORAL BITS';
-    p15.setAttribute('style', 'font-size: 2rem;')
+    p15.setAttribute('style', 'font-size: 2rem;');
     p16.textContent = 'SMALL.................................... 1.00';
     p17.textContent = 'MEDIUM................................. 1.25';
     p18.textContent = 'LARGE.................................... 1.50';
@@ -60,13 +60,13 @@ export default function menuLoader() {
     p20.classList.add('right');
     p21.textContent = 'KELP SHAKE...................... 2.00';
     p22.textContent = 'SEAFOAM SODA';
-    p22.setAttribute('style', 'align-self: center;')
+    p22.setAttribute('style', 'align-self: center;');
     p23.textContent = 'Small... 1.00';
-    p23.setAttribute('style', 'align-self: center;')
+    p23.setAttribute('style', 'align-self: center;');
     p24.textContent = 'Medium... 1.25';
-    p24.setAttribute('style', 'align-self: center;')
+    p24.setAttribute('style', 'align-self: center;');
     p25.textContent = 'Large... 1.50';
-    p25.setAttribute('style', 'align-self: center;')
+    p25.setAttribute('style', 'align-self: center;');
     tl.appendChild(p1);
     tl.appendChild(p2);
     tl.appendChild(p3);

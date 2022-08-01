@@ -140,6 +140,18 @@ footer {
     }
 }
 
+#krabs {
+    width: 18%;
+    min-width: 250px;
+    height: auto;
+    position: absolute;
+    transform: translate(60%,-40%);
+    -webkit-transform: translate(60%,-40%);
+    -moz-transform: translate(60%,-40%);
+    -ms-transform: translate(60%,-40%);
+    -o-transform: translate(60%,-40%);
+}
+
 body {
     height: 100%;
     font-family: main;

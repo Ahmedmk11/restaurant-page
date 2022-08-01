@@ -1,3 +1,5 @@
+import Krabs from '../assets/images/krabs.png'
+
 export default function mainLoader() {
     const frame = document.createElement('div');
     const title = document.createElement('h1');
@@ -7,7 +9,10 @@ export default function mainLoader() {
     const historyTitle = document.createElement('h2');
     const aboutP = document.createElement('p');
     const historyP = document.createElement('p');
+    const krabs = new Image();
 
+    krabs.src = Krabs;
+    krabs.id = 'krabs';
     title.textContent = 'The Krusty Krab';
     about.classList.add('containers');
     history.classList.add('containers');
@@ -17,7 +22,7 @@ export default function mainLoader() {
     historyTitle.textContent = 'History';
     historyP.textContent = 'After the war, Krabs stayed secluded in a deep depression that seemed endless.\
     But then his luck changed when he acquired a bankrupt retirement home and with a few minor alterations,\
-    the Krusty Krab was born!'
+    the Krusty Krab was born!';
 
     about.id = 'about';
     history.id = 'history';
@@ -27,6 +32,7 @@ export default function mainLoader() {
     about.appendChild(aboutP);
     history.appendChild(historyTitle);
     history.appendChild(historyP);
+    frame.appendChild(krabs);
     frame.appendChild(title);
     frame.appendChild(about);
     frame.appendChild(history);
