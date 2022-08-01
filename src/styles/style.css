@@ -71,11 +71,49 @@ footer p a:hover {
 }
 #frame h1 {
   color: #6c2017;
-  font-size: 5.5rem;
+  font-size: 4rem;
   margin-top: 0%;
+  margin-bottom: 0%;
 }
 #frame #menuTitle {
   font-size: 8.5rem;
+}
+
+#topContact {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+}
+#topContact p {
+  margin: 0.4rem;
+  font-size: 1.2rem;
+}
+#topContact h2 {
+  font-size: 2.2rem;
+  text-decoration: underline;
+}
+#topContact div {
+  text-align: center;
+}
+#topContact #staff {
+  margin: 1em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#bottomContact {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 1em;
+}
+#bottomContact h2 {
+  text-decoration: underline;
+  font-size: 2.2rem;
 }
 
 #topMenu, #bottomMenu {
@@ -158,6 +196,11 @@ button:hover {
 
 .right {
   align-self: flex-end;
+}
+
+#map {
+  width: 74%;
+  height: auto;
 }
 
 /*# sourceMappingURL=style.css.map */
