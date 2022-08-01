@@ -49,8 +49,14 @@ footer p a:hover {
 
 #frame {
   margin-top: 1em;
+  padding-left: 1em;
+  padding-right: 1em;
   background-color: #e5d4a5;
   border: 15px #80592b solid;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
   width: 38%;
   height: 88%;
   max-width: 725px;
@@ -65,7 +71,29 @@ footer p a:hover {
 }
 #frame h1 {
   color: #6c2017;
-  font-size: 5rem;
+  font-size: 5.5rem;
+  margin-top: 0%;
+}
+#frame #menuTitle {
+  font-size: 8.5rem;
+}
+
+#topMenu, #bottomMenu {
+  display: flex;
+  flex-direction: row;
+  font-size: 1.63rem;
+  width: 100%;
+  justify-content: space-between;
+}
+#topMenu div, #bottomMenu div {
+  display: flex;
+  flex-direction: column;
+}
+#topMenu div p, #bottomMenu div p {
+  margin: 0.1em;
+}
+#topMenu #br, #bottomMenu #br {
+  margin-top: 2.1em;
 }
 
 body {
@@ -126,6 +154,10 @@ button:hover {
   -moz-transform: scale(1.24);
   -ms-transform: scale(1.24);
   -o-transform: scale(1.24);
+}
+
+.right {
+  align-self: flex-end;
 }
 
 /*# sourceMappingURL=style.css.map */
