@@ -1,3 +1,6 @@
 export default function contactLoader() {
-    console.log("I'm contact");
+    const frame = document.createElement('div');
+    frame.textContent = 'Contact';
+    frame.id = 'frame';
+    return frame;
 }

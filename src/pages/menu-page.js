@@ -1,3 +1,6 @@
 export default function menuLoader() {
-    console.log("I'm menu");
+    const frame = document.createElement('div');
+    frame.textContent = 'Menu';
+    frame.id = 'frame';
+    return frame;
 }

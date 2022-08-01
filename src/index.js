@@ -5,7 +5,7 @@ import './styles/style.css';
 
 const main = (() => {
     const container = document.createElement('div');
-    const frame = mainLoader();
+    let frame = mainLoader();
     const footer = document.createElement('footer');
     const p1 = document.createElement('p');
     const github = document.createElement('a');
@@ -49,18 +49,30 @@ const main = (() => {
         about.classList.add('active');
         menu.classList.remove('active');
         contact.classList.remove('active');
+        frame = mainLoader();
+        container.innerHTML = '';
+        container.appendChild(frame);
+        container.appendChild(footer);
     });
     
     menu.addEventListener('click', () => {
         about.classList.remove('active');
         menu.classList.add('active');
         contact.classList.remove('active');
+        frame = menuLoader();
+        container.innerHTML = '';
+        container.appendChild(frame);
+        container.appendChild(footer);
     });
     
     contact.addEventListener('click', () => {
         about.classList.remove('active');
         menu.classList.remove('active');
         contact.classList.add('active');
+        frame = contactLoader()
+        container.innerHTML = '';
+        container.appendChild(frame);
+        container.appendChild(footer);
     });
 
     let currentYear = new Date().getFullYear();
