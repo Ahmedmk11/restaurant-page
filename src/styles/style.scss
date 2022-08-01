@@ -25,11 +25,18 @@ footer {
     -o-transition: transform 100ms ease-in-out;
     p {
         margin: 0.4em;
-        color: black;
+        color: white;
         a:visited {
-            color: black;
+            color: #e5d4a5;
+        }
+        a:hover {
+            color: white;
         }
     }
+}
+
+.active {
+    color: #e5d4a5 !important;
 }
 
 #container {
@@ -42,19 +49,20 @@ footer {
 }
 
 #frame {
+    margin-top: 1em;
     background-color: #e5d4a5;
-    border: 10px #80592b solid;
+    border: 15px #80592b solid;
     width: 38%;
     height: 88%;
     max-width: 725px;
     min-width: 550px;
     max-height: 860px;
     min-height: 640px;
-    border-radius: 15px;
-    -webkit-border-radius: 15px;
-    -moz-border-radius: 15px;
-    -ms-border-radius: 15px;
-    -o-border-radius: 15px;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
 }
 
 body {
@@ -65,11 +73,54 @@ body {
     background-attachment: fixed;
     user-select: none;
     margin: 0%;
-    padding-top: 1em;
     img {
         -webkit-user-drag: none;
         -khtml-user-drag: none;
         -moz-user-drag: none;
         -o-user-drag: none;
     }
+}
+
+#btn-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    position: absolute;
+    width: 400px;
+    margin-top: 0.3em;
+}
+
+button {
+    background-color: #80592b;
+    border: none;
+    color: white;
+    margin: 0em;
+    padding: 0.75em 1em;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.2rem;
+    cursor: pointer;
+    width: 100px;
+    height: 55px;
+    font-family: Arial, Helvetica, sans-serif;
+    transition: transform 300ms ease-in-out;
+    -webkit-transition: transform 300ms ease-in-out;
+    -moz-transition: transform 300ms ease-in-out;
+    -ms-transition: transform 300ms ease-in-out;
+    -o-transition: transform 300ms ease-in-out;
+    border-radius: 16px;
+    -webkit-border-radius: 16px;
+    -moz-border-radius: 16px;
+    -ms-border-radius: 16px;
+    -o-border-radius: 16px;
+}
+
+button:hover {
+    transform: scale(1.24);
+    -webkit-transform: scale(1.24);
+    -moz-transform: scale(1.24);
+    -ms-transform: scale(1.24);
+    -o-transform: scale(1.24);
 }

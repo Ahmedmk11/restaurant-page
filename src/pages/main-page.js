@@ -1,3 +1,5 @@
 export default function mainLoader() {
-    console.log("I'm main")
+    const frame = document.createElement('div');
+    frame.id = 'frame';
+    return frame;
 }
