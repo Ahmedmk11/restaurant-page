@@ -111,7 +111,9 @@ footer {
     flex-direction: column;
     align-items: center;
     margin-bottom: 1em;
+    font-size: 1.3rem;
     h2 {
+        margin-bottom: 0%;
         text-decoration: underline;
         font-size: 2.2rem;
     }
@@ -202,4 +204,46 @@ button:hover {
 #map {
     width: 74%;
     height: auto;
+    border: 4px solid #80592b;
+}
+
+.containers {
+    border: 4px solid #80592b;
+    width: 300px;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    font-size: 1.35rem;
+}
+
+#history, #about {
+    text-align: center;
+    p {
+        margin: 0%;
+    }
+    h2 {
+        color: #80592b;
+    }
+}
+
+#about {
+    height: 250px;
+    align-self: flex-start;
+}
+
+#history {
+    height: 320px;
+    align-self: flex-end;
+}
+
+#patrick {
+    position: absolute;
+    width: 400px;
+    transform: translate(-170%);
+    -webkit-transform: translate(-170%);
+    -moz-transform: translate(-170%);
+    -ms-transform: translate(-170%);
+    -o-transform: translate(-170%);
 }

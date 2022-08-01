@@ -4,8 +4,8 @@ import contactLoader from './pages/contact-page';
 import './styles/style.css';
 
 const main = (() => {
-    const container = document.createElement('div');
     let frame = mainLoader();
+    const container = document.createElement('div');
     const footer = document.createElement('footer');
     const p1 = document.createElement('p');
     const github = document.createElement('a');
@@ -27,7 +27,7 @@ const main = (() => {
     span1.id = 'starting-year';
     span2.id = 'current-year';
     buttonContainer.id = 'btn-container';
-    about.textContent = 'About';
+    about.textContent = 'Home';
     menu.textContent = 'Menu';
     contact.textContent = 'Contact';
     about.classList.add('active');
@@ -80,5 +80,4 @@ const main = (() => {
     if (startYr != currentYear) {
         span2.textContent = `-${currentYear}`;
     }
-    return {container}
 })();
